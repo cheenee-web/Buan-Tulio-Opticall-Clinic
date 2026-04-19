@@ -2130,3 +2130,113 @@ a {
     opacity: 1;
     visibility: visible;
 }
+
+.service-item .icon {
+  background: none !important;
+}
+
+.service-item .icon::before,
+.service-item .icon::after {
+  display: none !important;
+}
+
+.service-item .icon {
+  background-image: none !important;
+}
+
+.service-item .icon i {
+  font-size: 40px;
+  line-height: 80px;
+}
+
+.service-item:hover .icon {
+  background-image: none !important;
+}
+
+footer {
+  background: #f8fbff;
+  padding: 80px 0 40px;
+}
+
+.footer-widget h4 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1f3c88;
+}
+
+.footer-widget ul {
+  padding: 0;
+}
+
+.footer-widget ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-widget ul li a {
+  color: #555;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-widget ul li a:hover {
+  color: #1f3c88;
+}
+
+.footer-widget p {
+  color: #666;
+  font-size: 14px;
+}
+
+.copyright-text {
+  text-align: center;
+  margin-top: 30px;
+  color: #888;
+  font-size: 13px;
+}
+
+.btn-highlight {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white !important;
+    font-weight: 600;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0, 114, 255, 0.35);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* hover effect */
+.btn-highlight:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 114, 255, 0.5);
+}
+
+/* subtle shine animation */
+.btn-highlight::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 50%;
+    height: 200%;
+    background: rgba(255,255,255,0.25);
+    transform: rotate(25deg);
+    transition: all 0.6s ease;
+}
+
+.btn-highlight:hover::after {
+    left: 120%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(96,165,250,0.18), transparent 45%),
+        radial-gradient(circle at 80% 10%, rgba(59,130,246,0.14), transparent 45%),
+        radial-gradient(circle at 50% 90%, rgba(147,197,253,0.12), transparent 50%),
+        #f4f6f9;
+    min-height: 100vh;
+}
