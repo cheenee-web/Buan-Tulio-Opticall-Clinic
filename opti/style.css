@@ -2240,3 +2240,64 @@ body {
         #f4f6f9;
     min-height: 100vh;
 }
+
+/* Make columns stretch equally */
+.pricing-tables .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Make each column flex */
+.pricing-tables .col-lg-3 {
+  display: flex;
+}
+
+/* Make ALL cards equal height */
+.pricing-item-regular,
+.pricing-item-pro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 30px 20px !important;
+}
+
+/* Remove bigger effect on Card 2 */
+.pricing-item-pro {
+  transform: scale(1) !important;
+  margin-top: 0 !important;
+}
+
+/* Force equal spacing inside */
+.pricing-item-regular ul,
+.pricing-item-pro ul {
+  flex-grow: 1;
+}
+
+/* Hover effect */
+.pricing-item-regular:hover,
+.pricing-item-pro:hover {
+  transform: translateY(-10px);
+  transition: 0.3s ease;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* FIX FONT ONLY */
+.section-heading p {
+  font-family: inherit;
+  color: inherit;
+}
+
+.section-heading p {
+  color: #444 !important;
+}
+
+/* CARD TEXT COLOR FIX ONLY */
+.pricing-item-regular ul li {
+  color: #444 !important;
+}
+
+.pricing-item-regular h4 {
+  color: #222 !important;
+}
