@@ -2850,3 +2850,8 @@ section,
         min-height: 360px;
     }
 }
+
+.services-hero__actions a {
+    display: inline-flex;
+    align-items: center;
+}
