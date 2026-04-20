@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Buan Tulio Optical Clinic</title>
+<title>Promo | Buan Tulio Optical Clinic</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,50 +13,108 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="Logo" style="height:50px;">
+            <img src="images/LOGO2.png" alt="Logo" style="height:50px;">
         </a>
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#clinicNav">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="clinicNav">
             <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
                 <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
-                <li class="nav-item"><a class="nav-link active" href="gallery.html">GALLERY</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
                 <li class="nav-item"><a class="nav-link" href="contacts.html">CONTACTS</a></li>
-
-                 <li class="nav-item"><a class="nav-link text-danger fw-bold" href="promo.html">PROMO</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <li class="nav-item"><a class="nav-link text-danger fw-bold active" href="promo.html">PROMO</a></li>
+            </ul>
         </div>
     </div>
-
 </nav>
 
+<section class="promo-showcase">
+    <div class="container">
+        <div class="promo-showcase__header text-center">
+            <p class="promo-showcase__kicker">Current promos</p>
+            <h1>Featured lens package offers</h1>
+            <p>These promo slots are ready for your uploaded posters and already include the matching offer details below.</p>
+        </div>
 
-<!-- PROMO SECTION -->
-<div class="container my-5" style="padding-top:80px;">
-  <div class="position-relative text-center text-white" style="height:400px;">
+        <div class="promo-grid">
+            <article class="promo-poster-card">
+                <div class="promo-poster-frame">
+                    <img src="images/promo1.jpg" alt="Essentials Plus promo poster" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+                    <div class="promo-poster-fallback" style="display:none;">
+                        <span class="promo-fallback-label">Poster slot 1</span>
+                        <h2>Essentials Plus</h2>
+                        <p>Free upgrade to Light Adapt</p>
+                        <small>Add `images/promo-essentials-plus.jpg` to show the original poster.</small>
+                    </div>
+                </div>
+                <div class="promo-copy">
+                    <h3>Essentials Active Plus Blue UV</h3>
+                    <p>Buy one pair of Essentials Active Plus Blue UV lenses and get a free upgrade to Light Adapt.</p>
+                    <p class="promo-meta">Promo period: April 1 to June 30, 2026</p>
+                    <a href="contacts.html" class="btn btn-primary rounded-pill px-4">Ask About This Promo</a>
+                </div>
+            </article>
 
-    <!-- IMAGE -->
-    <img src="images/p11.jpg" class="img-fluid w-100 h-100 rounded" style="object-fit:cover;">
-
-    <!-- DARK OVERLAY -->
-    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 rounded"></div>
-
-    <!-- TEXT -->
-    <div class="position-absolute top-50 start-50 translate-middle">
-      <h2 class="fw-bold">Promo Ended</h2>
-      <p>Stay tuned for our next exciting offers!</p>
+            <article class="promo-poster-card">
+                <div class="promo-poster-frame">
+                    <img src="images/promo2.jpg" alt="Ultimate Lens Package promo poster" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+                    <div class="promo-poster-fallback" style="display:none;">
+                        <span class="promo-fallback-label">Poster slot 2</span>
+                        <h2>Ultimate Lens Package</h2>
+                        <p>Varilux Transitions with complimentary Varilux Xperio</p>
+                        <small>Add `images/promo-ultimate-lens-package.jpg` to show the original poster.</small>
+                    </div>
+                </div>
+                <div class="promo-copy">
+                    <h3>Varilux Transitions + Varilux Xperio</h3>
+                    <p>Buy one pair of Varilux Transitions lenses and get a complimentary pair of Varilux Xperio lenses.</p>
+                    <p class="promo-meta">Promo period: April 1 to June 30, 2026</p>
+                    <a href="contacts.html" class="btn btn-primary rounded-pill px-4">Contact the Clinic</a>
+                </div>
+            </article>
+        </div>
     </div>
-
-  </div>
-</div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<footer class="clinic-footer">
+    <div class="container">
+        <div class="clinic-footer__inner">
+            <div class="clinic-footer__brand">
+                <img src="images/LOGO2.png" alt="Buan Tulio Optical Clinic logo">
+                <p>Trusted eye care, quality eyewear, and dependable service for every patient visit.</p>
+            </div>
+
+            <div class="clinic-footer__group">
+                <span class="clinic-footer__title">Pages</span>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+
+            <div class="clinic-footer__group">
+                <span class="clinic-footer__title">Visit</span>
+                <p>Buan-Tulio Optical Clinic<br>Arayat, Pampanga</p>
+                <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+            </div>
+
+            <div class="clinic-footer__group">
+                <span class="clinic-footer__title">Contact</span>
+                <a href="tel:09758831391">09758831391</a>
+                <a href="mailto:info@buan-tulio-optical-clinic.site">info@buan-tulio-optical-clinic.site</a>
+                <a href="index.html#appointment" class="clinic-footer__cta">Book Appointment</a>
+            </div>
+        </div>
+
+        <div class="clinic-footer__bottom">
+            <p class="mb-0">&copy; 2026 Buan Tulio Optical Clinic. All rights reserved.</p>
+            <p class="mb-0">See Clearly. Live Better.</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
