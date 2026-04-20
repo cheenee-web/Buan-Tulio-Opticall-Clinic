@@ -3,234 +3,181 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About</title>
+<title>Gallery | Buan Tulio Optical Clinic</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<style>
+    .collection-item {
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .collection-image img {
+        transition: transform 0.5s ease;
+    }
+    .collection-item:hover .collection-image img {
+        transform: scale(1.08);
+    }
+    .modal-body img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+</style>
 </head>
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="Logo" style="height:50px;">
+            <img src="images/LOGO2.png" alt="Logo" style="height:50px;">
         </a>
-
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#clinicNav">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="clinicNav">
             <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
                 <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
                 <li class="nav-item"><a class="nav-link active" href="gallery.html">GALLERY</a></li>
                 <li class="nav-item"><a class="nav-link" href="contacts.html">CONTACTS</a></li>
-
-                 <li class="nav-item"><a class="nav-link text-danger fw-bold" href="promo.html">PROMO</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                <li class="nav-item"><a class="nav-link text-danger fw-bold" href="promo.html">PROMO</a></li>
+            </ul>
         </div>
     </div>
-
 </nav>
 
-
-
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
- 
-</style>
-</head>
-
-<body>
-
-
- <section class="hero">
-
+<section class="hero">
     <div class="hero-content">
-
-        <p class="text-label hero-tagline">
-            Professional Eye Care & Eyewear Solutions
-        </p>
-
-        <h1 class="heading-display hero-title">
-            See Clearly.<br>Live <em>Better</em>
-        </h1>
-
-        <p class="text-body hero-description">
-            We provide comprehensive eye examinations and high-quality prescription eyewear,
-            helping you achieve clearer vision and long-term eye health with trusted care
-            from licensed professionals.
-        </p>
-
+        <p class="text-label hero-tagline">Professional Eye Care & Eyewear Solutions</p>
+        <h1 class="heading-display hero-title">See Clearly.<br>Live <em>Better</em></h1>
+        <p class="text-body hero-description">Browse selected eyewear styles and practical options available through our clinic.</p>
         <div class="hero-actions">
             <a href="#collections" class="btn-primary">Browse Eyewear</a>
-            <a href="index.html" class="btn-primary">Book an Eye Checkup</a>
+            <a href="index.html#appointment" class="btn-primary">Book an Eye Checkup</a>
         </div>
-
     </div>
-
     <div class="hero-image">
-
-        <div class="hero-slide active"
-             data-title="Complete Eye Checkup"
-             data-price="">
-            <img src="images/g1.jpg" alt="Eye examination service">
-        </div>
-
-        <div class="hero-slide"
-             data-title="Premium Eyeglass Frames"
-             data-price="From ₱1,500">
-            <img src="images/g4.jpg" alt="Eyeglass frames collection">
-        </div>
-
-        <div class="hero-slide"
-             data-title="Contact Lens Solutions"
-             data-price="From ₱999">
-            <img src="images/g3.jpg" alt="Contact lenses">
-        </div>
-
+        <div class="hero-slide active"><img src="images/g1.jpg" alt="Eye care gallery"></div>
         <div class="hero-image-overlay">
-            <p class="overlay-title" id="heroTitle">Complete Eye Checkup</p>
-            <p class="overlay-price" id="heroPrice">Just Visit Our Clinic!</p>
-        </div>
-
-    </div>
-
-</section>
-    
-    <!-- Featured Piece -->
-    <!-- Featured Piece -->
-<section class="featured-piece">
-    <div class="container">
-        <div class="featured-grid">
-
-            <div class="featured-image-wrapper">
-                <div class="featured-image">
-                    <img src="images/g2.jpg" 
-                         alt="Premium eyeglass frame">
-                </div>
-                <div class="featured-badge">New Arrival</div>
-            </div>
-
-            <div class="featured-content">
-                <p class="text-label featured-label">Featured Frame</p>
-
-                <h2 class="heading-display featured-title">
-                    Aurora Optical Frame
-                </h2>
-
-                <p class="text-body featured-description">
-                    Designed for all-day comfort and clarity, the Aurora Frame combines lightweight materials 
-                    with modern precision engineering. Its sleek design enhances facial structure while providing 
-                    optimal vision support for everyday use.
-                </p>
-
-                <div class="featured-details">
-
-                    <div class="detail-row">
-                        <span class="detail-label">Material</span>
-                        <span class="detail-value">TR90 Lightweight Frame</span>
-                    </div>
-
-                    <div class="detail-row">
-                        <span class="detail-label">Lens Type</span>
-                        <span class="detail-value">Gold Light / Prescription Ready</span>
-                    </div>
-
-                    <div class="detail-row">
-                        <span class="detail-label">Fit</span>
-                        <span class="detail-value">Adjustable Comfort Nose Pads</span>
-                    </div>
-
-                </div>
-
-                <p class="featured-price">₱4,900</p>
-                <a href="contacts.html" class="btn-primary">Book an Eye Checkup</a>
-            </div>
-
+            <p class="overlay-title">Complete Eye Checkup</p>
+            <p class="overlay-price">Visit Our Clinic Today</p>
         </div>
     </div>
 </section>
 
-    <!-- Collections -->
-<!-- Collections -->
 <section class="collections" id="collections">
     <div class="container">
-
         <div class="section-header">
             <div class="section-header-left">
                 <h2 class="heading-display section-title">Our Eyewear Collections</h2>
-                <p class="text-body section-subtitle">
-                    Discover frames designed for clarity, comfort, and confidence
-                </p>
+                <p class="text-body section-subtitle">Click any collection to preview it in full size.</p>
             </div>
             <a href="services.html" class="btn-primary">View Our Services</a>
         </div>
 
         <div class="collections-grid">
-
-            <div class="collection-item">
-                <div class="collection-image">
-                    <img src="images/g4.jpg" alt="Prescription glasses collection">
-                </div>
+            <div class="collection-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/g4.jpg" data-title="Prescription Glasses">
+                <div class="collection-image"><img src="images/g4.jpg" alt="Prescription glasses"></div>
                 <div class="collection-overlay">
                     <h3 class="collection-name">Prescription Glasses</h3>
                     <p class="collection-count">24 frames</p>
                 </div>
             </div>
 
-            <div class="collection-item">
-                <div class="collection-image">
-                    <img src="images/m1.jpg" alt="Everyday eyewear">
-                </div>
+            <div class="collection-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/m1.jpg" data-title="Everyday Wear">
+                <div class="collection-image"><img src="images/m1.jpg" alt="Everyday eyewear"></div>
                 <div class="collection-overlay">
                     <h3 class="collection-name">Everyday Wear</h3>
                     <p class="collection-count">36 frames</p>
                 </div>
             </div>
 
-            <div class="collection-item">
-                <div class="collection-image">
-                    <img src="images/m2.jpg" alt="Blue light glasses">
-                </div>
+            <div class="collection-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/m2.jpg" data-title="Blue Light Protection">
+                <div class="collection-image"><img src="images/m2.jpg" alt="Blue light protection glasses"></div>
                 <div class="collection-overlay">
                     <h3 class="collection-name">Blue Light Protection</h3>
                     <p class="collection-count">18 frames</p>
                 </div>
             </div>
 
-            <div class="collection-item">
-                <div class="collection-image">
-                    <img src="images/m3.jpg" alt="Premium eyewear">
-                </div>
+            <div class="collection-item" data-bs-toggle="modal" data-bs-target="#galleryModal" data-img="images/m3.jpg" data-title="Premium Collection">
+                <div class="collection-image"><img src="images/m3.jpg" alt="Premium eyewear"></div>
                 <div class="collection-overlay">
                     <h3 class="collection-name">Premium Collection</h3>
                     <p class="collection-count">12 frames</p>
                 </div>
             </div>
-
-            <div class="collection-item">
-                <div class="collection-image">
-                    <img src="images/m4.jpg" alt="Men and women eyewear">
-                </div>
-                <div class="collection-overlay">
-                    <h3 class="collection-name">Men & Women</h3>
-                    <p class="collection-count">15 frames</p>
-                </div>
-            </div>
-
         </div>
-
     </div>
 </section>
 
-  </div>
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content shadow-lg">
+            <div class="modal-header border-0">
+                <h5 class="modal-title fw-bold" id="modalTitle">Collection View</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="" id="modalImage" class="img-fluid mb-3" alt="Gallery Preview">
+                <p id="modalDesc">Explore our high-quality frames designed for your vision needs.</p>
+            </div>
+            <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="contacts.html" class="btn btn-primary" style="background-color: #008080; border: none;">Inquire Now</a>
+            </div>
+        </div>
+    </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const galleryModal = document.getElementById('galleryModal');
+    galleryModal.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget;
+        const imageSrc = button.getAttribute('data-img');
+        const title = button.getAttribute('data-title');
+        galleryModal.querySelector('#modalImage').src = imageSrc;
+        galleryModal.querySelector('#modalTitle').textContent = title;
+    });
+</script>
+
+<footer class="clinic-footer">
+    <div class="container">
+        <div class="clinic-footer__inner">
+            <div class="clinic-footer__brand">
+                <img src="images/LOGO2.png" alt="Buan Tulio Optical Clinic logo">
+                <p>Trusted eye care, quality eyewear, and dependable service for every patient visit.</p>
+            </div>
+
+            <div class="clinic-footer__group">
+                <span class="clinic-footer__title">Pages</span>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+
+            <div class="clinic-footer__group">
+                <span class="clinic-footer__title">Visit</span>
+                <p>Buan-Tulio Optical Clinic<br>Arayat, Pampanga</p>
+                <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+            </div>
+
+            <div class="clinic-footer__group">
+                <span class="clinic-footer__title">Contact</span>
+                <a href="tel:09758831391">09758831391</a>
+                <a href="mailto:info@buan-tulio-optical-clinic.site">info@buan-tulio-optical-clinic.site</a>
+                <a href="index.html#appointment" class="clinic-footer__cta">Book Appointment</a>
+            </div>
+        </div>
+
+        <div class="clinic-footer__bottom">
+            <p class="mb-0">&copy; 2026 Buan Tulio Optical Clinic. All rights reserved.</p>
+            <p class="mb-0">See Clearly. Live Better.</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
