@@ -2301,3 +2301,552 @@ body {
 .pricing-item-regular h4 {
   color: #222 !important;
 }
+/* GAP KILLER: Removes any hidden spacing between content and footer */
+html, body {
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+section, main, .container-fluid {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* ==========================================================================
+   BUAN-TULIO OPTICAL CLINIC - CUSTOM STYLES
+   ========================================================================== */
+
+:root {
+    --clinic-teal: #008080;
+    --clinic-light-bg: #f8f9fa;
+    --clinic-text-muted: #6c757d;
+    --footer-gap: 80px; /* Adjust this single value to change spacing globally */
+}
+
+/* 1. Global Section Resets (Removes unwanted gaps) */
+section, .section {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* 2. Footer Section */
+.footer-section {
+    background-color: var(--clinic-light-bg);
+    border-top: 1px solid #eee;
+    padding: 40px 0 20px !important;
+    margin-top: var(--footer-gap) !important; /* Controlled gap */
+    display: block;
+    clear: both;
+}
+
+/* 3. Footer Typography & Links */
+.footer-section h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-links li, 
+.footer-contact li {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    color: var(--clinic-text-muted);
+    list-style: none;
+}
+
+.footer-links a {
+    color: var(--clinic-text-muted);
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--clinic-teal) !important;
+    padding-left: 5px;
+}
+
+/* 4. Custom Components */
+.text-teal {
+    color: var(--clinic-teal) !important;
+}
+
+.btn-teal-outline {
+    background: transparent;
+    border: 2px solid var(--clinic-teal);
+    color: var(--clinic-teal);
+    font-weight: 600;
+    border-radius: 10px 30px 10px 10px; /* Your signature curved design */
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-teal-outline:hover {
+    background-color: var(--clinic-teal);
+    color: #fff;
+}
+
+/* 5. Utility: Responsive Mobile Fixes */
+@media (max-width: 768px) {
+    .footer-section {
+        text-align: center;
+        margin-top: 40px !important;
+    }
+    .footer-contact li i {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+/* Shared footer, home appointment, and services layout */
+.clinic-footer {
+    background: #ffffff;
+    border-top: 1px solid #dfe8f5;
+    margin-top: 32px;
+    padding: 20px 0 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.clinic-footer__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) repeat(3, minmax(0, 0.9fr));
+    gap: 18px;
+    align-items: start;
+}
+
+.clinic-footer__brand img {
+    height: 38px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.clinic-footer__title {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #0f4f86;
+}
+
+.clinic-footer__brand p,
+.clinic-footer__group p,
+.clinic-footer__group a,
+.clinic-footer__bottom p {
+    margin: 0;
+    color: #5d6b7a;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.clinic-footer__group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.clinic-footer__group a:hover {
+    color: #0d6efd;
+}
+
+.clinic-footer__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-top: 6px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #0d6efd;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.clinic-footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #edf2f8;
+}
+
+.appointment-strip {
+    padding: 8px 0 20px;
+}
+
+.appointment-panel {
+    background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+    border: 1px solid #dbe7f5;
+    border-radius: 26px;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.35fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.appointment-kicker {
+    color: #0d6efd;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.appointment-panel__intro h2 {
+    color: #12345b;
+    font-size: clamp(1.65rem, 2.6vw, 2.2rem);
+}
+
+.appointment-panel__intro p {
+    max-width: 440px;
+}
+
+.appointment-form {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.appointment-form__field {
+    min-width: 0;
+}
+
+.appointment-form .form-control,
+.appointment-form .form-select {
+    min-height: 48px;
+    border-radius: 14px;
+    border: 1px solid #d4e0ee;
+    background: #fff;
+}
+
+.appointment-form__submit {
+    grid-column: span 3;
+    min-height: 50px;
+    border: 0;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #0d6efd, #2ea4ff);
+    color: #fff;
+    font-weight: 600;
+}
+
+.home-highlight-card {
+    height: 100%;
+    padding: 22px;
+    border-radius: 18px;
+    border: 1px solid #dde8f6;
+    background: #fff;
+    box-shadow: 0 8px 22px rgba(13, 110, 253, 0.06);
+}
+
+.home-highlight-card h3 {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #17375e;
+}
+
+.services-hero {
+    padding: 56px 0 24px;
+}
+
+.services-hero__content {
+    max-width: 760px;
+}
+
+.services-hero__kicker,
+.services-summary__label,
+.service-detail-card__eyebrow {
+    margin-bottom: 8px;
+    color: #0d6efd;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.services-hero__content h1 {
+    font-size: clamp(2.1rem, 4vw, 3.4rem);
+    color: #16355a;
+    margin-bottom: 14px;
+}
+
+.services-hero__text {
+    max-width: 620px;
+}
+
+.services-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.services-overview {
+    padding: 12px 0 24px;
+}
+
+.service-detail-card {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    gap: 18px;
+    height: 100%;
+    padding: 18px;
+    border: 1px solid #dbe7f5;
+    border-radius: 22px;
+    background: #fff;
+    box-shadow: 0 10px 28px rgba(13, 110, 253, 0.06);
+}
+
+.service-detail-card__media {
+    height: 180px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #eff5fb;
+}
+
+.service-detail-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-detail-card__body h2 {
+    margin-bottom: 10px;
+    font-size: 1.45rem;
+    color: #17375e;
+}
+
+.service-detail-card__body ul {
+    margin: 12px 0 0;
+    padding-left: 18px;
+    color: #506173;
+}
+
+.services-summary {
+    margin-top: 22px;
+    padding: 20px 22px;
+    border-radius: 20px;
+    border: 1px solid #dbe7f5;
+    background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    align-items: center;
+}
+
+body {
+    background:
+        radial-gradient(circle at top left, rgba(83, 160, 255, 0.20), transparent 34%),
+        radial-gradient(circle at top right, rgba(104, 193, 255, 0.16), transparent 30%),
+        linear-gradient(180deg, #f6fbff 0%, #eef5fb 42%, #f8fbff 100%) !important;
+    background-attachment: fixed;
+    position: relative;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    border-radius: 999px;
+    filter: blur(60px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+body::before {
+    top: 110px;
+    left: -40px;
+    width: 220px;
+    height: 220px;
+    background: rgba(13, 110, 253, 0.10);
+}
+
+body::after {
+    right: -20px;
+    bottom: 80px;
+    width: 260px;
+    height: 260px;
+    background: rgba(58, 175, 255, 0.11);
+}
+
+main,
+section,
+.card,
+.appointment-panel,
+.service-detail-card,
+.home-highlight-card,
+.promo-poster-card,
+.promo-showcase__header {
+    position: relative;
+    z-index: 1;
+}
+
+.promo-showcase {
+    padding: 56px 0 24px;
+}
+
+.promo-showcase__header {
+    max-width: 760px;
+    margin: 0 auto 28px;
+}
+
+.promo-showcase__kicker {
+    color: #0d6efd;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.promo-showcase__header h1 {
+    margin-bottom: 12px;
+    color: #17375e;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.promo-poster-card {
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid #dce8f5;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 16px 34px rgba(13, 110, 253, 0.08);
+}
+
+.promo-poster-frame {
+    background: linear-gradient(180deg, #edf6ff 0%, #dfeeff 100%);
+    padding: 14px;
+}
+
+.promo-poster-frame img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(15, 79, 134, 0.15);
+}
+
+.promo-poster-fallback {
+    min-height: 520px;
+    border-radius: 18px;
+    padding: 28px;
+    align-content: center;
+    background:
+        linear-gradient(135deg, rgba(255,255,255,0.88), rgba(225,239,255,0.92)),
+        radial-gradient(circle at top right, rgba(73, 145, 255, 0.22), transparent 35%);
+    text-align: left;
+}
+
+.promo-fallback-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.10);
+    color: #0d6efd;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.promo-poster-fallback h2 {
+    margin-bottom: 10px;
+    color: #17375e;
+}
+
+.promo-poster-fallback p {
+    margin-bottom: 10px;
+    font-size: 1.02rem;
+}
+
+.promo-poster-fallback small {
+    color: #5d6b7a;
+}
+
+.promo-copy {
+    padding: 20px 22px 24px;
+}
+
+.promo-copy h3 {
+    margin-bottom: 10px;
+    color: #17375e;
+}
+
+.promo-copy p {
+    margin-bottom: 10px;
+}
+
+.promo-meta {
+    color: #0f4f86 !important;
+    font-weight: 600;
+}
+
+@media (max-width: 991px) {
+    .clinic-footer__inner,
+    .appointment-panel,
+    .services-summary,
+    .promo-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .clinic-footer__brand,
+    .appointment-panel__intro {
+        grid-column: 1 / -1;
+    }
+
+    .appointment-form {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .appointment-form__submit {
+        grid-column: span 2;
+    }
+
+    .service-detail-card {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail-card__media {
+        height: 220px;
+    }
+}
+
+@media (max-width: 767px) {
+    .clinic-footer__inner,
+    .appointment-panel,
+    .appointment-form,
+    .services-summary,
+    .promo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .clinic-footer__bottom {
+        flex-direction: column;
+    }
+
+    .appointment-form__submit {
+        grid-column: span 1;
+    }
+
+    .appointment-panel {
+        padding: 18px;
+        border-radius: 20px;
+    }
+
+    .clinic-footer {
+        padding-top: 18px;
+    }
+
+    .promo-poster-fallback {
+        min-height: 360px;
+    }
+}
